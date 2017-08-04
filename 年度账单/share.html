@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta name="wap-font-scale" content="no">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no,email=no,adress=no">
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="css/share.css">
+	<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<body>
+<div class="wrap">
+	<div><img src="images/page9_01.jpg" alt=""></div>
+	<div class="re">
+		<img src="images/page9_02.jpg" alt="">
+		<div class="shenjiaBox">
+			<p>十年后,我的身价</p>
+			<p>约<span id="share_prize" class="share-value">￥131.29亿</span></p>
+		</div>
+	</div>
+	<div class="re">
+		<img src="images/page9_03.jpg" alt="">
+		<a href="javascript:void(0);" class="page9Btn" id="btn" otype="button">测测自己的</a>
+	</div>
+	<div><img src="images/page9_04.jpg" alt=""></div>
+	<div><img src="images/page9_05.jpg" alt=""></div>
+
+</div>
+<!-- <script src="js/index.js" type="text/javascript" ></script> -->
+<script type="text/javascript">
+var prize = urlPara('prize=');
+document.getElementById('btn').addEventListener('click',function(){
+	window.location.href = "http://test-events.pingan.com.cn:41080/h5/Ndzd2017/index.html";
+});
+if (prize != '') {
+	document.getElementById('share_prize').innerHTML = '￥'+prize+'亿';
+};
+
+// 获取url参数
+function urlPara(v){
+    var url = window.location.search;
+    if (url.indexOf(v) != -1){
+    var start = url.indexOf(v)+v.length;
+    var end = url.indexOf('&',start) == -1 ? url.length : url.indexOf('&',start);
+    return url.substring(start,end);
+    } else { return '';}
+}
+</script>
+</body>
+</html>

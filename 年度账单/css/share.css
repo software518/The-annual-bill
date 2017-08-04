@@ -1,0 +1,119 @@
+* { margin: 0; padding: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-text-size-adjust: none;}
+body { font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;}
+img { vertical-align: top; border: none; width: 100%;}
+a { text-decoration: none; -webkit-touch-callout: none;}
+em,i { font-style: normal;}
+li { list-style: none;}
+html,body { height: 100%; font-family: 'Microsoft Yahei';}
+@media screen and (max-width: 319px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  html {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 413px) {
+  html {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 639px)  {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 751px)  {
+  html {
+    font-size: 40px;
+  }
+}
+.wrap { min-width: 320px; max-width: 750px; margin: 0 auto; background: url('../images/bg.jpg'); }
+.re {
+	position: relative;
+}
+
+/* page9 */
+.shenjiaBox {
+	position:absolute;
+	left: 0;
+	bottom: -35%;
+	z-index: 1;
+	width: 100%;
+}
+.shenjiaBox p {
+	text-align: center;
+	font-size: 1rem;
+	color: #6b4922;
+	margin-top: 2%;
+	font-family: 'Microsoft Yahei';
+}
+.shenjiaBox p span {
+	font-size: 1.8rem;
+	color: #b11422;
+	font-family: 'Microsoft Yahei';
+	font-weight: normal;
+	vertical-align: middle;
+	line-height: 2.2rem;
+	display: inline-block;
+	min-width:40%;
+}
+.page9Btn {
+	position:absolute;
+	left: 50%;
+	bottom: 0%;
+	width: 40%;
+	margin-left: -20%;
+	text-align: center;
+	line-height: 1.8rem;
+	border-radius: 40px;
+	color: #f0de63;
+	background: #c11c17;
+	box-shadow: #700602 0px 3px 0px;
+}
+.banner{
+	display: block;
+}
+
+/* page8 */
+.sharefont {
+	position:absolute;
+	right: 7%;
+	top: 20%;
+	font-size: .9rem;
+	color: #6b4922;
+	width: 20%;
+	height: 30%;
+	text-align: right;
+}
+.page8Shenjia div {
+	bottom: 91%;
+}
+.page8Cont {
+	position: absolute;
+	left: 0;
+	top: 30%;
+	text-align: center;
+	width: 100%;
+	color: #7a552a;
+}
+.page8Cont h1 {
+	font-size: 1rem;
+	font-weight: normal;
+}
+.page8Cont p {
+	font-size: .8rem;
+	margin-top: 10%;
+}
+.share-value{
+	font-size: 1.8rem;
+	color: #b11422;
+	font-family: 'Microsoft Yahei';
+	font-weight: normal;
+	vertical-align: middle;
+	line-height: 2.2rem;
+	display: inline-block;
+	min-width:40%;
+}

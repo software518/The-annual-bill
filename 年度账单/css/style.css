@@ -1,0 +1,1416 @@
+* { 
+  margin: 0; 
+  padding: 0; 
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+  -webkit-text-size-adjust: none;
+}
+body { 
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+img { 
+  vertical-align: top; 
+  border: none; 
+  width: 100%;
+}
+input,textarea { 
+  -webkit-user-select: text; 
+  -ms-user-select: text; 
+  user-select: text; 
+  -webkit-appearance: none; 
+  border: none; 
+  outline: none;
+}
+a { 
+  text-decoration: none; 
+  -webkit-touch-callout: none;
+}
+em,i { 
+  font-style: normal;
+}
+li { 
+  list-style: none;
+}
+html,body { 
+  width: 100%;
+  height: 100%;
+}
+/* html { 
+  font-size: 10px;
+} */
+@media screen and (min-width:320px) and (max-width: 374px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width:375px) and (max-width: 413px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width:414px){
+  html {
+    font-size: 14px;
+  }
+}
+.page { 
+  min-width: 320px; 
+  max-width: 640px; 
+  margin: 0 auto;
+}
+.portrait { 
+  min-width: 320px; 
+  max-width: 640px; 
+  margin: 0 auto;
+}
+.landscape { 
+  display: none;
+}
+/**/
+.fp-section { 
+  overflow: hidden;
+}
+.landscape p { 
+  position: absolute; 
+  top: 50%; 
+  width: 100%; 
+  text-align: center; 
+  transform: translateY(-50%); 
+  -webkit-transform: translateY(-50%); 
+  font-size: 3rem;
+}
+#fp-nav{
+  display: none;
+}
+.page0ne{
+  background: url(../images/bg1.jpg) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.pageTwo,.pageThree,.pageFour,.pageFive,.pageSix,.pageSeven{
+  background: url(../images/page2-bg.jpg) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.page0ne .one-title{
+  width: 56%;
+  height: 25%;
+  position: absolute;
+  left:50%;
+  top:10%;
+  transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  background: url(../images/page1_text.png) no-repeat;
+  background-size: 100% 100%;
+ opacity: 0;
+}
+.page0ne .up-bg{
+  width: 250%;
+  height: 50%;
+  position: relative;
+  top:-10%;
+  left:-75%;
+  background: url(../images/page1_bg2.png) no-repeat;
+  background-size: 100% 100%;
+}
+.page0ne .lump-box{
+  width: 45%;
+  height: 16%;
+  position: absolute;
+  top:0;
+  left:-10%;
+  background:url(../images/plum.png) no-repeat;
+  background-size: 100% 100%;
+}
+.page0ne .fu{
+  width: 12%;
+  height: 22%;
+  position: absolute;
+  top:11.5%;
+  left:-13%;
+  background: url(../images/good.png) no-repeat;
+  background-size: 100% 100%;
+  transform-origin: 0 20%;
+  -webkit-transform-origin: 0 20%;
+}
+.fuani{
+  animation: liuxingyu 5s linear;
+}
+@keyframes liuxingyu{
+  0%{
+    transform:rotate(0deg);
+  }
+  25%{
+    transform:rotate(5deg);
+  }
+  50%{
+    transform:rotate(0deg);
+  }
+  75%{
+    transform:rotate(-5deg);
+  }
+  100%{
+    transform:rotate(0deg);
+  }
+}
+@-webkit-keyframes liuxingyu{
+  0%{
+    transfrom:rotate(0deg);
+    -webkit-transfrom:rotate(0deg);
+  }
+
+  25%{
+    transfrom:rotate(5deg);
+
+    -webkit-transfrom:rotate(5deg);
+  }
+  50%{
+    transfrom:rotate(0deg);
+
+    -webkit-transfrom:rotate(0deg);
+  }
+  75%{
+     transfrom:rotate(-5deg);
+
+    -webkit-transfrom:rotate(-5deg);
+  }
+  100%{
+
+    transfrom:rotate(0deg);
+
+    -webkit-transfrom:rotate(0deg);
+  }
+}
+.page0ne .left-temple{
+  width: 46%;
+  height:18%;
+  position: relative;
+  top:7%;
+  left:-23%;
+  background: url(../images/temple_left.png) no-repeat;
+  background-size: 100% 100%;
+  transform-origin: 100% 0;
+  -webkit-transform-origin: 100% 0;
+}
+.page0ne .right-temple{
+  width: 46%;
+  height:23%;
+  position: relative;
+  top:-15%;
+  right:-80%;
+  background: url(../images/temple_right.png) no-repeat;
+  background-size: 100% 100%;
+  transform-origin: 0 100%;
+}
+.bottom-bg{
+  width: 100%;
+  height: 6%;
+  background: url(../images/waves.png) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  bottom:-4.5%;
+  left:50%;
+  opacity: 0;
+}
+.gold-coin1{
+  width: 17%;
+  height: 10%;
+  background: url(../images/gold_coin1.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom:16%;
+  left:10%;
+  opacity: 0;
+  z-index: 2;
+}
+.gold-coin2{
+  width: 16%;
+  height: 8%;
+  background: url(../images/gold_coin2.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top:48%;
+  right: 23%;
+  opacity: 0;
+}
+.cash-cow{
+  width: 26%;
+  height: 14%;
+  background: url(../images/flower.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left:-7%;
+  bottom:9%;
+  z-index: 1;
+}
+.chicken{
+  width: 24%;
+  height: 10%;
+  background: url(../images/hao_egg.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom:9%;
+  right: -11%;
+  z-index: 2;
+}
+.down-arrow{
+  width: 6.5%;
+  height: 2%;
+  background: url(../images/arrow.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom:7%;
+  left:50%;
+  transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  opacity: 0;
+}
+.lion{
+  width: 39%;
+  height: 32%;
+  background: url(../images/person_lion.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top:51%;
+  left:-35%;
+  transform-origin: 50% 0;
+  -webkit-transform-origin:50% 0;
+}
+.three-person{
+  width: 49%;
+  height:23%;
+  background:url(../images/three_people.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top:60%;
+  right: -35%; 
+  transform-origin: 50% 0;
+  -webkit-transform-origin: 50% 0;
+}
+/* 第二屏 */
+.two-title{
+  width: 60%;
+  height: 15%;
+  background: url(../images/page2_text.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top:25%;
+  left:50%;
+  transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  opacity: 0;
+}
+.earth{
+  width: 69%;
+  height: 43%;
+  background: url(../images/page2_earth.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left:0;
+  top:39%;
+  opacity: 0;
+}
+.arrowTwo{
+  width: 6.5%;
+  height: 2%;
+  background: url(../images/arrow.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom:12%;
+  left:50%;
+  transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  z-index: 2;
+}
+.topThree{
+  width: 43%;
+  height: 6%;
+  position: absolute;
+  top:54%;
+  right: 10%;
+/*   background: red; */
+}
+.topThree .circle{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #7a4923;
+  border-radius: 12px;
+  top:86%;
+  left:3%;
+  opacity: 0;
+}
+.topThree .slash{
+  width: 15px;
+  height: 13px;
+  border-top:1px solid #7a4923;
+  position: absolute;
+  top:72%;
+  left:9%;
+  transform:rotate(-45deg);
+  -webkit-transform:rotate(-45deg);
+  opacity: 0;
+}
+
+.topThree .line{
+  width: 0%;
+  height: 10%;
+  border-top:1px solid #7a4923;
+  position: absolute;
+  top:63%;
+  left:14%;
+}
+.topThree .text-box{
+  width: 100%; 
+  height: 48%;
+  font-size: 1rem;
+  position: absolute;
+  right:3%;
+  top:13%;
+  overflow:hidden;
+}
+.topThree .text-box .threeText{
+  position: absolute;
+  width: 100%;
+  text-align: right;
+  top:100%;
+  color:#7a4923;
+}
+.topTwo{
+  width: 43%;
+  height: 5%;
+  position: absolute;
+  top:60%;
+  left: 10%;
+  /* background: red; */
+}
+.topTwo .circle{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #7a4923;
+  border-radius: 12px;
+  top:47%;
+  right:-1%;
+  opacity: 0;
+}
+.topTwo .slash{
+  width: 15px;
+  height: 13px;
+  border-bottom:1px solid #7a4923;
+  position: absolute;
+  top:46%;
+  right:5%;
+  transform:rotate(-45deg);
+  -webkit-transform:rotate(-45deg);
+  opacity: 0;
+}
+@media screen and (min-width:320px) and (max-width: 374px) {
+  .topTwo .line{
+  width: 0%;
+  height: 10%;
+  border-top:1px solid #7a4923;
+  position: absolute;
+  bottom:-18%;
+  right:10%;
+  /* transform-origin: 100% 0;
+  transform-origin: 100% 0; */
+  }
+}
+@media screen and (min-width:375px) and (max-width:413px){
+  .topTwo .line{
+  width: 0%;
+  height: 10%;
+  border-top:1px solid #7a4923;
+  position: absolute;
+  bottom:-12%;
+  right:10%;
+  /* transform-origin: 100% 0;
+  transform-origin: 100% 0; */
+  }
+}
+@media screen and (min-width:375px) and (max-width: 413px) and(height: 667px){
+  .topTwo .line{
+  width: 0%;
+  height: 10%;
+  border-top:1px solid #7a4923;
+  position: absolute;
+  bottom:-15%;
+  right:10%;
+  /* transform-origin: 100% 0;
+  transform-origin: 100% 0; */
+  }
+}
+@media screen and (min-width:414px){
+  .topTwo .line{
+  width: 0%;
+  height: 10%;
+  border-top:1px solid #7a4923;
+  position: absolute;
+  bottom:-8%;
+  right:9%;
+  /* transform-origin: 100% 0;
+  transform-origin: 100% 0; */
+  }
+  
+  .topThree .line{
+  width: 0%;
+  height: 10%;
+  border-top:1px solid #7a4923;
+  position: absolute;
+  top:64%;
+  left:13%;
+  }
+}
+.topTwo .text-box{
+  width: 100%; 
+  height: 52%;
+  font-size: 1rem;
+  position: absolute;
+  right:3%;
+  top:34%;
+  overflow:hidden;
+}
+.topTwo .text-box .threeText{
+  position: absolute;
+  width: 100%;
+  left:9%;
+  top:100%;
+  color:#7a4923;
+}
+.topOne{
+  width: 43%;
+  height: 6%;
+  position: absolute;
+  top:69.5%;
+  right: 15.5%;
+  /* background: red; */
+}
+.topOne .circle{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #7a4923;
+  border-radius: 12px;
+  top:86%;
+  left:3%;
+  opacity: 0;
+}
+.topOne .slash{
+  width: 15px;
+  height: 13px;
+  border-top:1px solid #7a4923;
+  position: absolute;
+  top:72%;
+  left:9%;
+  transform:rotate(-45deg);
+  -webkit-transform:rotate(-45deg);
+  opacity: 0;
+}
+
+.topOne .line{
+  width: 0%;
+  height: 10%;
+  border-top:1px solid #7a4923;
+  position: absolute;
+  top:63%;
+  left:14%;
+}
+@media screen and (min-width: 414px){
+  .topOne .line{
+  width: 0%;
+  height: 10%;
+  border-top:1px solid #7a4923;
+  position: absolute;
+  top:64%;
+  left:13%;
+  }
+}
+.topOne .text-box{
+  width: 100%; 
+  height: 48%;
+  font-size: 1rem;
+  position: absolute;
+  right:3%;
+  top:13%;
+  overflow:hidden;
+}
+.topOne .text-box .threeText{
+  position: absolute;
+  width: 100%;
+  text-align: right;
+  top:100%;
+  color:#7a4923;
+}
+.twobg{
+  width: 100%;
+  height: 29%;
+  background: url(../images/page2_bg.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* 第三屏样式 */
+.threeBg{
+  width: 100%;
+  height: 31%;
+  background: url(../images/chun_bg.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.threeLeft{
+  width: 46.4%;
+  height: 18%;
+  background: url(../images/temple_left.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left:0;
+  top:65%;
+}
+.threeRight{
+  width: 46.8%;
+  height: 23%;
+  background: url(../images/temple_right.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top:60%;
+  right: -2%;
+}
+.person{
+  width: 58%;
+  height: 41%;
+  background: url(../images/page3_people.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top:50%;
+  left:16%;
+}
+.threeTitle{
+  width: 57%;
+  position: absolute;
+  top:25%;
+  left:50%;
+  transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  opacity: 0;
+  color:#7a552a;
+}
+.threeTitle .title{
+  font-size: 3rem;
+  font-family: "Microsoft YaHei";
+  line-height: 5rem;
+  text-align: center;
+}
+.threeTitle .minTitle{
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  text-align: center;
+}
+.threeChicken{
+  width: 23.4%;
+  height: 10%;
+  background: url(../images/hao_egg.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 8%;
+  left:15%;
+  opacity: 0;
+}
+.threeGold{
+  width: 16.8%;
+  height: 10%;
+  background: url(../images/gold_coin1.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left:0;
+  bottom:20%;
+  opacity: 0;
+}
+.threeArrow{
+  width: 6.5%;
+  height: 2%;
+  background: url(../images/arrow.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left:50%;
+  transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  bottom:11%;
+}
+.infoMan{
+  width: 20%;
+  height: 5%;
+  background: url(../images/page3_man.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top:60%;
+  left:8%;
+  opacity: 0;
+}
+.infoGirl{
+  width: 19.6%;
+  height: 5%;
+  background: url(../images/page3_girl.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top:57%;
+  right: 14%;
+  opacity: 0;
+}
+/* 第四屏 */
+.fourBg{
+  width: 100%;
+  height: 31%;
+  background: url(../images/chun_bg.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.fourArrow{
+  width: 6.5%;
+  height: 2%;
+  background: url(../images/arrow.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left:50%;
+  transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  bottom:11%; 
+}
+.fourLeft{
+  width: 46.4%;
+  height: 18%;
+  background: url(../images/temple_left.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left:0;
+  top:56%;
+}
+.fourRight{
+  width: 46.8%;
+  height: 23%;
+  background: url(../images/temple_right.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top:53%;
+  right: -2%;
+}
+.fourFlower{
+  width: 26%;
+  height: 14%;
+  background: url(../images/flower.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left:8%;
+  bottom:18%;
+  z-index: 1;
+}
+.fourChicken{
+  width: 24%;
+  height: 10%;
+  background: url(../images/hao_egg.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom:20%;
+  right: 16%;
+  z-index: 2;
+}
+.fourGlod{
+  width: 17%;
+  height: 10%;
+  background: url(../images/gold_coin1.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom:6%;
+  left:7%;
+  z-index: 2;
+}
+.fourTitle{
+  width: 53%;
+  height: 10.5%;
+  background: url(../images/libra.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top:25%;
+  left:50%;
+  transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  opacity: 0;
+}
+.leftCons{
+  width: 25%;
+  height: 20%;
+  background: url(../images/page4_consleft.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top:34%;
+  left:0;
+  opacity: 0;
+}
+.rightCons{
+  width: 21%;
+  height: 25%;
+  background: url(../images/page4_consright.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top:30%;
+  right: 0;
+  opacity: 0;
+}
+.fourLibra{
+  width: 20%;
+  height: 12%;
+  background: url(../images/page4_pisces.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top:43%;
+  left:50%;
+  transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  opacity: 0;
+}
+/* 第五屏 */
+.fiveBg{
+  width: 100%;
+  height: 31%;
+  background: url(../images/chun_bg.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.fiveArrow{
+  width: 6.5%;
+  height: 2%;
+  background: url(../images/arrow.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left:50%;
+  transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  bottom:11%; 
+}
+.fiveLeft{
+  width: 46.4%;
+  height: 18%;
+  background: url(../images/temple_left.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left:0;
+  top:56%;
+}
+.fiveRight{
+  width: 46.8%;
+  height: 23%;
+  background: url(../images/temple_right.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top:53%;
+  right: -2%;
+}
+.fiveFlower{
+  width: 26%;
+  height: 14%;
+  background: url(../images/flower.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left:23%;
+  bottom:15%;
+  z-index: 1;
+}
+.fiveChicken{
+  width: 24%;
+  height: 10%;
+  background: url(../images/hao_egg.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom:20%;
+  right: 16%;
+  z-index: 2;
+}
+.fiveGlod{
+  width: 17%;
+  height: 10%;
+  background: url(../images/gold_coin1.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom:15%;
+  left:-4%;
+  z-index: 2;
+}
+.fiveTitle{
+  position: absolute;
+  top:25%;
+  left:50%;
+  transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  text-align: center;
+  opacity: 0;
+}
+.fiveBig{
+  font-size: 3rem;
+  line-height: 5rem;
+  font-family: "Microsoft YaHei";
+  color:#7a552a;
+}
+.fiveSmall{
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  color:#7a552a;
+}
+.fiveHistogram{
+  width: 74%;
+  height: 25%;
+  position: absolute;
+  bottom:35.4%;
+  left:50%;
+  transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  opacity: 0;
+}
+.down-text{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-top:1%;
+}
+.down-text li{
+  width: 12.5%;
+  float: left;
+  font-size: 1.2rem;
+  text-align: center;
+  color:#7a552a;
+  font-family: "Microsoft YaHei";
+  padding:0 2%;
+}
+.down-text li:nth-child(4){
+  color:#a52c19;
+}
+.up-pillars{
+  width: 100%;
+  height: 86%;
+  position: absolute;
+  bottom: 13%;
+  left:0;
+  border-bottom: 1px solid #a97a58;
+}
+.up-pillars li{
+  float: left;
+  width: 12.5%;
+  margin:0 2%;
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+.up-pillars li .fiveNum{
+  color:#7a552a;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left:0;
+}
+.up-pillars li .pillars{
+  border-radius: 2px 2px 0 0;
+}
+.up-pillars li:nth-child(1) .pillars{
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #a97a58;
+}
+.up-pillars li:nth-child(1) .fiveNum{
+  top:90%;
+}
+.up-pillars li:nth-child(2) .pillars{
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #a97a58;
+}
+.up-pillars li:nth-child(2) .fiveNum{
+  top:90%;
+}
+.up-pillars li:nth-child(3) .pillars{
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #a97a58;
+}
+.up-pillars li:nth-child(3) .fiveNum{
+  top:90%;
+}
+.up-pillars li:nth-child(4) .pillars{
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #a52c19;
+}
+.up-pillars li:nth-child(4) .fiveNum{
+  top:90%;
+}
+.up-pillars li:nth-child(5) .pillars{
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #a97a58;
+}
+.up-pillars li:nth-child(5) .fiveNum{
+  top:41%;
+}
+.up-pillars li:nth-child(6) .pillars{
+  width: 100%;
+  height: 3%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #a97a58;
+}
+.up-pillars li:nth-child(6) .fiveNum{
+  top:88%;
+}
+@media screen and (min-width:414px){
+  .up-pillars{
+    width: 100%;
+    height: 86%;
+    position: absolute;
+    bottom: 14%;
+    left:0;
+  }
+}
+@media screen and (min-width:320px) and (max-height: 480px){
+  .up-pillars{
+    width: 100%;
+    height: 94%;
+    position: absolute;
+    bottom: 14%;
+    left:0;
+  }
+  .down-text{
+    width: 100%;
+    border-top:1px solid #a97a58;
+    position: absolute;
+    bottom: -1%;
+    left: 0;
+    padding-top:1%;
+  }
+}
+/* 第六屏 */
+.sixBg{
+  width: 100%;
+  height: 31%;
+  background: url(../images/chun_bg.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: -13%;
+  left: 0;
+}
+.sixLeft{
+  width: 38.4%;
+  height: 15%;
+  background: url(../images/temple_left.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left:0;
+  top:71%;
+}
+.sixRight{
+  width: 41.8%;
+  height: 21%;
+  background: url(../images/temple_right.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top:67%;
+  right: -2%;
+}
+.sixFlower{
+  width: 26%;
+  height: 14%;
+  background: url(../images/flower.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left:15%;
+  bottom:4%;
+  z-index: 1;
+}
+.sixChicken{
+  width: 24%;
+  height: 10%;
+  background: url(../images/hao_egg.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom:5%;
+  right: 7%;
+  z-index: 2;
+}
+.sixGlod{
+  width: 17%;
+  height: 10%;
+  background: url(../images/money.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom:32%;
+  left:11%;
+  z-index: 2;
+}
+.sixDown{
+  width: 100%;
+  height: 5%;
+  background: url(../images/waves.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: -6%;
+  left: 0;
+}
+.sixLogin{
+  width:58%;
+  height: 35%;
+  background: url(../images/login_bg1.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom:5%;
+  left:50%;
+  transform:translateX(-50%); 
+  -webkit-transform:translateX(-50%); 
+  z-index: 3;
+  opacity: 0;
+}
+.btn-login{
+  width: 65%;
+  height: 30%;
+  position: absolute;
+  top:22%;
+  left:50%;
+  transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+}
+.sixLogged{
+  width: 68.5%;
+  height: 38.3%;
+  background: url(../images/red_bg.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 5%;
+  left:17%;
+  z-index: 1;
+  font-size: 1.3rem;
+  color:#dd7a31;
+  opacity: 0;
+
+}
+.sixname{
+position: absolute;
+top:20%;
+left:8%;
+width: 80%;
+font-size: 1.5rem;
+font-family: "Microsoft YaHei";
+text-align: center;
+}
+.sixtext{
+  position: absolute;
+  top:35%;
+  left:8%;
+  width: 80%;
+  text-align: center;
+  line-height: 2.2rem;
+  font-family: "Microsoft YaHei";
+}
+.sixRed{
+  font-size: 2rem;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.sixTitle{
+  width: 48%;
+  position: absolute;
+  top:14%;
+  left:50%;
+  transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  text-align: center;
+  opacity: 0;
+}
+.sixBig{
+  font-size: 3rem;
+  line-height: 4rem;
+  font-family: "Microsoft YaHei";
+  color:#7a552a;
+}
+.sixSmall{
+  font-size: 1.3rem;
+  font-family: "Microsoft YaHei";
+  color:#7a552a;
+}
+.person-count{
+  width: 88%;
+  height: 22%;
+  position: absolute;
+  top:27%;
+  left:8%;
+  color:#7a552a;
+  opacity: 0;
+}
+.person-count .zhejiang{
+  width: 28%;
+  height: 100%;
+  margin-right: 3%;
+  float: left;
+  text-align: center;
+
+}
+.person-count .zhejiang .icon1{
+  width: 100%;
+  height: 53%;
+
+}
+.person-count .zhejiang .icon1 .img1{
+  width: 0;
+  height: 0;
+  background: url(../images/zhejiang.png) no-repeat;
+  background-size: 100% 100%;
+  margin:0 auto;
+
+}
+.person-count .zhejiang .text1{
+  line-height: 1.5rem;
+  margin-top:1%;
+
+}
+.person-count .zhejiang .text1 .color1{
+  font-size: 1.2rem;
+}
+.person-count .zhejiang .desc1{
+  text-align: right;
+  margin-top:13%;
+  width: 100%;
+  height: 11%;
+}
+.person-count .zhejiang .desc1 .earthPosi{
+  display: inline-block;
+  width: 12%;
+  height: 84%;
+  background: url(../images/position.png) no-repeat;
+  background-size: 100% 100%;
+  vertical-align: middle;
+  margin-right:5%;
+}
+.person-count .shanghai{
+  width: 34%;
+  height: 100%;
+  margin-right:3%;
+  float: left;
+}
+.person-count .shanghai .icon1{
+  width: 100%;
+  height: 53%;
+
+}
+.person-count .shanghai .icon1 .img2{
+  width: 0;
+  height: 0;
+  background: url(../images/shanghai.png) no-repeat;
+  background-size: 100% 100%;
+  margin:0 auto;
+
+}
+.person-count .shanghai .text1{
+  line-height: 1.5rem;
+  margin-top:1%;
+  text-align: center;
+}
+.person-count .shanghai .text1 .color1{
+  font-size: 1.2rem;
+}
+.person-count .shanghai .desc1{
+  text-align: center;
+  margin-top:10%;
+  width: 100%;
+  height: 11%;
+}
+.person-count .shanghai .desc1 .earthPosi{
+  display: inline-block;
+  width: 10%;
+  height: 84%;
+  background: url(../images/position.png) no-repeat;
+  background-size: 100% 100%;
+  vertical-align: middle;
+  margin-right:5%;
+}
+.person-count .beijing{
+  width: 28%;
+  height: 100%;
+  float: left;
+}
+.person-count .beijing .icon1{
+  width: 100%;
+  height: 53%;
+
+}
+.person-count .beijing .icon1 .img3{
+  width: 0;
+  height: 0;
+  background: url(../images/beijing.png) no-repeat;
+  background-size: 100% 100%;
+  margin:0 auto;
+
+}
+.person-count .beijing .text1{
+  line-height: 1.5rem;
+  margin-top:1%;
+  text-align: center;
+}
+.person-count .beijing .text1 .color1{
+  font-size: 1.2rem;
+}
+.person-count .beijing .desc1{
+  text-align: center;
+  margin-top:13%;
+  width: 100%;
+  height: 11%;
+}
+.person-count .beijing .desc1 .earthPosi{
+  display: inline-block;
+  width: 12%;
+  height: 84%;
+  background: url(../images/position.png) no-repeat;
+  background-size: 100% 100%;
+  vertical-align: middle;
+  margin-right:5%;
+}
+.red{
+  color:#b11422;
+  font-size: 1.5rem;
+  opacity: 0;
+}
+/* 第七屏 */
+.sevenBg{
+  width: 100%;
+  height: 31%;
+  background: url(../images/chun_bg.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: -7%;
+  left: 0;
+}
+.sevenLeft{
+  width: 38.4%;
+  height: 15%;
+  background: url(../images/temple_left.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left:0;
+  top:65%;
+}
+.sevenRight{
+  width: 41.8%;
+  height: 21%;
+  background: url(../images/temple_right.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top:61%;
+  right: -2%;
+}
+.sevenFlower{
+  width: 26%;
+  height: 14%;
+  background: url(../images/flower.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left:10%;
+  bottom:11%;
+  z-index: 1;
+}
+.sevenChicken{
+  width: 24%;
+  height: 10%;
+  background: url(../images/hao_egg.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom:9%;
+  right: 11%;
+  z-index: 2;
+}
+.sevenGlod{
+  width: 17%;
+  height: 10%;
+  background: url(../images/money.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom:12%;
+  left:39%;
+  z-index: 2;
+}
+.sevenDown{
+  width: 100%;
+  height: 5%;
+  background: url(../images/waves.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: -6%;
+  left: 0;
+}
+.sevenText{
+  width: 40%;
+  position: absolute;
+  top:25%;
+  left:50%;
+  transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  text-align: center;
+  font-size: 2rem;
+  color:#7a552a;
+  line-height: 2.5rem;
+  font-family: "Microsoft YaHei";
+  opacity: 0;
+}
+.yue{
+  margin-top:16%;
+}
+.number{
+  font-size: 3rem;
+  color:#b11422;
+  margin-top:5%;
+}
+.btn-test{
+  width: 40%;
+  position: absolute;
+  top:60%;
+  left:50%;
+  transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  opacity: 0;
+   
+}
+.btn-test a{
+  position: absolute;
+  left:0;
+  top:0;
+  width: 100%;
+  font-size:2rem;
+  color:#f0de63;
+  font-family: "Microsoft YaHei";
+  text-align: center;
+  background: #c11c17;
+  border-radius: 8rem;
+  box-shadow: 0 3px #700602;
+  padding:3% 0;
+
+}
